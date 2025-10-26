@@ -52,6 +52,29 @@ int main() {
     } while (contador_rainha <= casas_rainha);
     printf("\n");
 
+    // nivel aventureiro - movimentação do cavalo
+    // constantes para definir o movimento em "L" do Cavalo.
+    const int mov_vertical = 2; // Duas casas para baixo
+    const int mov_horizontal = 1; // Uma casa para esquerda
+
+    printf("--- Nível Aventureiro: Movimento do Cavalo ---\n");
+    printf("Movimento: %d casas para baixo e %d para esquerda\n", mov_vertical, mov_horizontal);
+  
+    // Loop para a parte vertical do movimento
+    for (int i = 0; i < mov_vertical; i++) {
+        printf("Baixo\n");
+    }
+
+    // Loop para a parte horizontal do movimento
+    int casas_h = 0;
+    while (casas_h < mov_horizontal) {
+        printf("Esquerda\n");
+        casas_h++;
+    }
+
+    printf("\n");
+
+
     
     
 
